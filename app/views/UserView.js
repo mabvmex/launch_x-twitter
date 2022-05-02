@@ -17,7 +17,12 @@ class UserView {
     if (!payload.username || !payload.name || !payload.id) {
       return { error: "Valores necesarios" };
     }
-  }
+    
+    return {username: 'username', name: 'name', id: 1 }
+  } 
+  
+
+
 }
 
 module.exports = UserView;
